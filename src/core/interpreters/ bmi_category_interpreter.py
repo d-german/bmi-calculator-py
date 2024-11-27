@@ -1,7 +1,7 @@
-﻿from src.core.interfaces.bmi_category_interpreter import IBMICategoryInterpreter
+﻿from src.core.interfaces.bmi_category_interpreter_base import BMICategoryInterpreterBase
 
 
-class BMICategoryInterpreter(IBMICategoryInterpreter):
+class BMICategoryInterpreter(BMICategoryInterpreterBase):
     def interpret_bmi(self, bmi: float) -> str:
         if bmi < 18.5:
             return "Underweight"
