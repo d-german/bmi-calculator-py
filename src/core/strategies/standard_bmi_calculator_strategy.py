@@ -11,8 +11,4 @@ class StandardBMICalculatorStrategy(BMICalculatorStrategyBase):
         if weight.unit_type != UnitType.Standard or height.unit_type != UnitType.Standard:
             raise InvalidOperationException("Both weight and height units must be standard.")
 
-        height_in_inches = height.value
-        weight_in_lbs = weight.value
-        bmi = (weight_in_lbs / (height_in_inches * height_in_inches)) * 703
-
-        return bmi
+        return (weight.value / (height.value * height.value)) * 703
