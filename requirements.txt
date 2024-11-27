@@ -1,5 +1,3 @@
-﻿pandas           # Data manipulation library
-pytest           # Testing framework
+﻿pytest           # Testing framework
 black            # Code formatter (optional but recommended for clean code)
-mypy             # Static type checker (optional for type hints)
 coverage         # Test coverage

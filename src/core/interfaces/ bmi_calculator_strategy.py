@@ -1,4 +1,6 @@
 ﻿from abc import ABC, abstractmethod
+
+from src.core.models.weight import Weight
 from src.core.models.height import Height
 
 
